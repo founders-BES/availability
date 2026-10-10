@@ -174,11 +174,11 @@ def summary(site, rows):
     s = SITES[site]
     now = sum(1 for o in rows if o["rank"] == 0)
     n = len(rows)
-    lo = min(o["price_n"] for o in rows)
+    lo = min(rows, key=lambda o: o["price_n"])
     parts = [f"{n} private office{'s' if n != 1 else ''} at {s['street']}, {s['postcode']}"]
     parts.append(f"{now} available now" if now else "none free today, more coming up")
     return (f"{s['full']} currently lists " + parts[0] + f" ({parts[1]}). "
-            f"Listed rooms start at £{lo:,}/month.")
+            f"Listed rooms start at {fmt_price(lo)}.")
 
 
 def offer_ld(o, site):
