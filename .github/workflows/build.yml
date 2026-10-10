@@ -1,0 +1,45 @@
+name: Rebuild availability page
+on:
+  schedule:
+    - cron: "17 6-20 * * *"   # hourly, 06:17-20:17 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: build
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      result: ${{ steps.b.outputs.result }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Build page from the public CSV (stops and keeps the live page if anything looks wrong)
+        id: b
+        run: |
+          out=$(python3 build.py --out docs) || exit 1
+          echo "result=$out" >> "$GITHUB_OUTPUT"
+      - name: Save the new version in the repo
+        if: steps.b.outputs.result == 'changed'
+        run: |
+          git config user.name "availability-bot"
+          git config user.email "availability-bot@users.noreply.github.com"
+          git add docs
+          git commit -m "Availability update $(date -u +%F)" && git push
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.b.outputs.result == 'changed' || github.event_name == 'workflow_dispatch'
+        with: { path: docs }
+  deploy:
+    needs: build
+    if: needs.build.outputs.result == 'changed' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    environment: { name: github-pages }
+    steps:
+      - uses: actions/deploy-pages@v4
+      - name: Tell Bing (IndexNow) the page changed
+        run: |
+          sleep 30
+          curl -s -o /dev/null -w "IndexNow %{http_code}\n" "https://api.indexnow.org/indexnow?url=https://availability.bespokespaces.co/&key=173e15833d526f0761b3f76139da8b38" || true
