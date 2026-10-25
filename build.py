@@ -26,6 +26,20 @@ ALLOWED = ["site", "label", "product", "desks", "sqft", "price", "vat", "status"
 # Master Facts guard: lowest advertised office price per site. A room below this fails the build.
 MIN_PRICE = {"archway": 595, "hornsey": 450}
 
+# Google Analytics 4 + Google Ads tag (added 25 Oct 2026).
+# Consent mode defaults to "denied": no cookies are set, Google gets anonymous pings only.
+# Clicks on WhatsApp, phone and Book-a-viewing links are sent as events.
+GA_SNIPPET = """<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+gtag('js',new Date());gtag('config','G-F75EW0QBMW');gtag('config','AW-944783854');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+if(h.indexOf('wa.me')>-1){gtag('event','whatsapp_click',{link_url:h});}
+else if(h.indexOf('tel:')===0){gtag('event','tel_click',{link_url:h});}
+else if(h.indexOf('/contact')>-1){gtag('event','book_viewing_click',{link_url:h});}});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F75EW0QBMW"></script>"""
+
 SITES = {
     "archway": {
         "name": "Archway", "full": "Bespoke Spaces Archway",
@@ -342,6 +356,7 @@ def render(data, now):
 <script type="application/ld+json">
 {build_jsonld(data, today)}
 </script>
+{GA_SNIPPET}
 </head>
 <body>
 <header class="top"><div class="wrap">
