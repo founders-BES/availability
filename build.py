@@ -283,6 +283,9 @@ td.room{font-weight:700}
 .s{display:inline-block;padding:.05em .6em;border-radius:20px;font-size:.88em;white-space:nowrap;background:rgba(123,181,178,.35)}
 .s.now{background:var(--teal)}
 .s.offer{background:rgba(0,0,0,.08)}
+.plans figure{margin:22px 0 6px}
+.plans svg{border-radius:4px}
+.plans figcaption{font-size:.85rem;opacity:.75;margin-top:6px}
 .terms{margin:40px 0}
 .terms li{margin:.3em 0}
 footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:.92rem;opacity:.85}
@@ -297,7 +300,19 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:.92rem;opa
 """
 
 
-def render(data, now):
+def plan_figs(plans, site):
+    """Live floor plans for one site (only buildings with a listed office)."""
+    figs = [p for p in (plans or {}).get(site, []) if p["listed"]]
+    if not figs:
+        return ""
+    from plans.live import inline
+    return "<div class=\"plans\">" + "".join(
+        f"<figure>{inline(p)}<figcaption><a href=\"plans/{p['slug']}.svg\">{E(p['title'])} floor plan</a>, "
+        "teal = available now, light teal = coming up. Updated with this list.</figcaption></figure>"
+        for p in figs) + "</div>"
+
+
+def render(data, now, plans=None):
     today = now.date()
     date_h = f"{today.day} {today.strftime('%B %Y')}"
     total = sum(len(v) for v in data.values())
@@ -328,6 +343,7 @@ def render(data, now):
 <p class="addr">{E(s['street'])}, London {E(s['postcode'])} · <a href="tel:{s['phone']}">{E(s['phone_h'])}</a> · <a href="mailto:{s['email']}">{E(s['email'])}</a></p>
 <p>{E(s['blurb'])}</p>
 {body}
+{plan_figs(plans, site)}
 <div class="ctas"><a class="btn" href="{MAIN}/contact">Book a viewing</a>
 <a class="btn ghost" href="https://wa.me/{s['wa']}">WhatsApp {E(s['name'])}</a>
 <a class="btn ghost" href="{s['offices']}">See the {E(s['name'])} offices</a></div>
@@ -351,7 +367,7 @@ def render(data, now):
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
 <style>{CSS}</style>
 <script type="application/ld+json">
 {build_jsonld(data, today)}
@@ -416,7 +432,14 @@ def main():
         sys.exit(1)
 
     os.makedirs(a.out, exist_ok=True)
-    changed = write_if_changed(os.path.join(a.out, "index.html"), render(data, now))
+    plans, plans_changed = None, False
+    try:  # live floor plans; a problem here never stops the page
+        from plans import live
+        plans_changed, plans = live.build(data, now.date(), os.path.join(a.out, "plans"), write_if_changed)
+    except Exception as e:
+        print(f"plans skipped, previous plans kept: {e!r}", file=sys.stderr)
+    changed = write_if_changed(os.path.join(a.out, "index.html"), render(data, now, plans))
+    changed = changed or plans_changed
     write_if_changed(os.path.join(a.out, "robots.txt"),
                      "User-agent: *\nAllow: /\n\n" +
                      "".join(f"User-agent: {b}\nAllow: /\n\n" for b in
