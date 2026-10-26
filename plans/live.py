@@ -5,6 +5,7 @@ floor plan with today's free and coming-up offices coloured in, and writes:
 
   docs/plans/<slug>.svg      flat plan (used on the pages)
   docs/plans/<slug>-3d.svg   3D cutaway
+  docs/plans/office/<slug>-office-<n>.svg   one listed office picked out, for its own page
 
 The drawings themselves live in plans/<building>.py; plans/render.py draws them.
 If anything here goes wrong the availability page is still built and the
@@ -42,6 +43,8 @@ def build(data, today, out_dir, write):
     date_s = f"{today.day} {today.strftime('%b %Y')}"
     os.makedirs(out_dir, exist_ok=True)
     changed, shown = False, {"archway": [], "hornsey": []}
+    keep = set()
+    os.makedirs(os.path.join(out_dir, "office"), exist_ok=True)
     for site, mod, slug, title, unit in BUILDINGS:
         P = importlib.import_module(mod)
         ids = {o[0] for o in P.OFFICES}
@@ -63,12 +66,24 @@ def build(data, today, out_dir, write):
             else:
                 continue  # under offer: shown as let
             listed.append(oid)
+        # single-office versions for each listed office's own page (no date, so they only change with status)
+        for oid in listed:
+            one_a = {oid} if oid in avail else set()
+            one_s = {oid: soon[oid]} if oid in soon else {}
+            name = f"{slug}-office-{oid.lower()}.svg"
+            keep.add(name)
+            changed |= write(os.path.join(out_dir, "office", name), render.flat(P, one_a, "", False, one_s, focus=oid))
         flat = render.flat(P, avail, date_s, False, soon)
         iso = render.isometric(P, avail, date_s, False, soon)
         changed |= write(os.path.join(out_dir, f"{slug}.svg"), flat)
         changed |= write(os.path.join(out_dir, f"{slug}-3d.svg"), iso)
         shown[site].append({"slug": slug, "title": title, "listed": listed, "svg": flat,
                             "avail": sorted(avail, key=_num), "soon": sorted(soon, key=_num)})
+    # remove single-office plans for offices no longer listed (their page shows nothing then)
+    for f in os.listdir(os.path.join(out_dir, "office")):
+        if f.endswith(".svg") and f not in keep:
+            os.remove(os.path.join(out_dir, "office", f))
+            changed = True
     # which plans to show, for the loader on bespokespaces.co (buildings with a listed office)
     import json
     idx = {site: [{"slug": p["slug"], "title": p["title"], "alt": alt_text(p)} for p in v if p["listed"]]

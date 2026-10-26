@@ -130,7 +130,8 @@ def head(W, H, embed):
             f'<rect width="{W}" height="{H}" fill="{S["page"]}"/>']
 
 # ------------------------------------------------------------------ flat
-def flat(P, avail, date, embed=True, soon=None):
+def flat(P, avail, date, embed=True, soon=None, focus=None):
+    """focus = an office id: single-office version for that office's own page."""
     base = avail is None
     avail = avail or set()
     soon = soon or {}
@@ -251,7 +252,7 @@ def flat(P, avail, date, embed=True, soon=None):
             o.append(f'<g transform="translate({lx-bw/2:.1f},{ly+8*fs_k:.1f})">' + leaf(0, 0, bw, bh, C['char'], r=bh/2) +
                      f'<text x="{bw/2:.1f}" y="{bh*0.69:.1f}" text-anchor="middle" class="bt" font-weight="700" font-size="{11*fs_k:.1f}" letter-spacing=".6" fill="{C["cream"]}">{txt}</text></g>')
         elif sq_txt:
-            pre = '' if base else 'Let · '
+            pre = '' if (base or focus) else 'Let · '
             o.append(f'<text x="{lx}" y="{ly+(17 if small else 21)*fs_k:.1f}" text-anchor="middle" class="bt" font-size="{(11 if small else 12.5)*fs_k:.1f}" fill="{C["char"]}" fill-opacity=".65"{H_}>{pre}{sq_txt}</text>')
     for lab in P.COMMON_LABELS:
         name, pos = lab[0], lab[1]
@@ -276,7 +277,22 @@ def flat(P, avail, date, embed=True, soon=None):
     o.append(f'<text x="{px}" y="245" class="bt" font-size="19" fill="{sub}">{M.get("summary", f"{n_off} private offices")}</text>')
     o.append(f'<line x1="{px}" y1="290" x2="{px+LW}" y2="290" stroke="{ink}" stroke-opacity=".2"/>')
     yy = 345
-    if not base:
+    if focus:
+        of = next(x for x in offices if x['id'] == focus)
+        col = S['avail'] if focus in avail else '#C3DEDB'
+        when = soon.get(focus)
+        status = ('Available now' if focus in avail else
+                  'Coming up, date to be confirmed' if when == 'soon' else f'Available from {when}')
+        dk = P.DESKS_PER.get(focus)
+        o.append(f'<text x="{px}" y="{yy}" class="ys" font-size="30" fill="{ink}">This office</text>'); yy += 62
+        o.append(leaf(px, yy - 30, 44, 44, col, r=22))
+        o.append(f'<text x="{px+62}" y="{yy}" class="ys" font-size="34" fill="{ink}">{of["name"]}</text>'); yy += 40
+        o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" fill="{sub}">{of["sq"]} sq ft{f" · {dk} desks" if dk else ""}</text>'); yy += 32
+        o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" font-weight="600" fill="{ink}">{status}</text>'); yy += 50
+        o.append(f'<line x1="{px}" y1="{yy}" x2="{px+LW}" y2="{yy}" stroke="{ink}" stroke-opacity=".2"/>')
+        yy += 55
+        legend = [('This office', col), ('Other offices', S['let']), ('Shared spaces', S['floor'])]
+    elif not base:
         o.append(f'<text x="{px}" y="{yy}" class="ys" font-size="30" fill="{ink}">Available now</text>')
         o.append(f'<text x="{px+LW}" y="{yy}" text-anchor="end" class="bt" font-size="15" fill="{sub}">As of {date}</text>')
         yy += 50
