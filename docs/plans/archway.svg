@@ -426,7 +426,7 @@
 <text x="910" y="245" class="bt" font-size="19" fill="#6b6a63">17 private offices · coworking · roof terrace</text>
 <line x1="910" y1="290" x2="1450" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="910" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
-<text x="1450" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 26 Oct 2026</text>
+<text x="1450" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 27 Oct 2026</text>
 <text x="910" y="395" class="bt" font-size="19" fill="#6b6a63">Nothing free today.</text>
 <text x="910" y="473" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
 <path d="M928,493 H946 V511 A18,18 0 0 1 928,529 H910 V511 A18,18 0 0 1 928,493 Z" fill="#C3DEDB"/>
