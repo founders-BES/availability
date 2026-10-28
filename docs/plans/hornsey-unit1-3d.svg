@@ -16,7 +16,7 @@
 <polygon points="-136.8,129.0 144.6,291.5 -2.6,376.5 -207.8,258.0 -183.6,244.0 -259.8,200.0" fill="#E2DCCF"/>
 <polygon points="-207.8,258.0 -2.6,376.5 -112.6,440.0 -317.8,321.5" fill="#E2DCCF"/>
 <polygon points="-317.8,321.5 -112.6,440.0 -213.9,498.5 -419.2,380.0" fill="#E2DCCF"/>
-<polygon points="-422.6,499.0 -297.0,571.5 -424.4,645.0 -549.9,572.5" fill="#7BB5B2"/>
+<polygon points="-422.6,499.0 -297.0,571.5 -424.4,645.0 -549.9,572.5" fill="#E2DCCF"/>
 <polygon points="-600.2,396.5 -422.6,499.0 -597.6,600.0 -775.1,497.5" fill="#E2DCCF"/>
 <polygon points="-259.8,202.0 -187.1,244.0 -420.9,379.0 -493.6,337.0" fill="#D2CDC2"/>
 <polyline points="-270.2,208.0 -197.5,250.0" stroke="#2D2D2A" stroke-opacity="0.3" fill="none"/>
@@ -461,14 +461,12 @@
 <g transform="translate(-68.8,212.5) scale(1.201)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">8</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">263 sq ft</text></g>
 <g transform="translate(-203.0,255.0) scale(1.201)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">8A</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">112 sq ft</text></g>
 <g transform="translate(-276.6,377.5) scale(1.201)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">9</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">105 sq ft</text></g>
+<g transform="translate(-438.6,539.0) scale(1.201)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">10</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">70 sq ft</text></g>
 <g transform="translate(-610.1,460.0) scale(1.201)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">11</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">203 sq ft</text></g>
-<polyline points="-438.6,581.2 -678.8,821.4" fill="none" stroke="#2D2D2A" stroke-width="2.64"/>
-<circle cx="-438.6" cy="581.2" r="6.00" fill="#2D2D2A"/>
-<g transform="translate(-955.0,779.4) scale(1.201)"><path d="M30,0 H230 V40 A30,30 0 0 1 200,70 H0 V30 A30,30 0 0 1 30,0 Z" fill="#2D2D2A"/><text x="115.0" y="31" text-anchor="middle" class="ys" font-size="25" fill="#EAE6DD">Office 10</text><text x="115.0" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="#7BB5B2">AVAILABLE · 70 SQ FT</text></g>
 </g>
 <text x="70" y="105" class="bt" font-size="15" letter-spacing="3" fill="#6b6a63">HORNSEY · 465 HORNSEY ROAD, N19</text>
 <text x="70" y="180" class="ys" font-size="68" fill="#2D2D2A" letter-spacing="-1.3">Unit 1</text>
-<text x="70" y="222" class="bt" font-size="19" fill="#6b6a63">11 private offices · 1 available as of 28 Oct 2026</text>
+<text x="70" y="222" class="bt" font-size="19" fill="#6b6a63">11 private offices · 0 available as of 28 Oct 2026</text>
 <rect x="72" y="272" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="110" y="290" class="bt" font-size="18" fill="#2D2D2A">Available</text>
 <rect x="72" y="310" width="24" height="24" rx="3" fill="#E2DCCF" stroke="#2D2D2A" stroke-opacity=".25"/>

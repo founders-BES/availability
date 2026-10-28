@@ -38,7 +38,7 @@
 <polygon points="50.0,208.0 375.0,208.0 375.0,378.0 138.0,378.0 138.0,350.0 50.0,350.0" fill="#DDD7C9"/>
 <polygon points="138.0,378.0 375.0,378.0 375.0,505.0 138.0,505.0" fill="#DDD7C9"/>
 <polygon points="138.0,505.0 375.0,505.0 375.0,622.0 138.0,622.0" fill="#DDD7C9"/>
-<polygon points="255.0,743.0 400.0,743.0 400.0,890.0 255.0,890.0" fill="#7BB5B2"/>
+<polygon points="255.0,743.0 400.0,743.0 400.0,890.0 255.0,890.0" fill="#DDD7C9"/>
 <polygon points="50.0,743.0 255.0,743.0 255.0,945.0 50.0,945.0" fill="#DDD7C9"/>
 <circle cx="72.8" cy="69.0" r="6.5" fill="#2D2D2A" opacity=".16"/>
 <circle cx="104.2" cy="69.0" r="6.5" fill="#2D2D2A" opacity=".16"/>
@@ -262,8 +262,8 @@
 <text x="180" y="446.0" text-anchor="middle" class="bt" font-size="12.5" fill="#2D2D2A" fill-opacity=".65" stroke="#DDD7C9" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Let · 112 sq ft</text>
 <text x="260" y="590" text-anchor="middle" class="ys" font-size="23.0" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Office 9</text>
 <text x="260" y="611.0" text-anchor="middle" class="bt" font-size="12.5" fill="#2D2D2A" fill-opacity=".65" stroke="#DDD7C9" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Let · 105 sq ft</text>
-<text x="328" y="845" text-anchor="middle" class="ys" font-size="17.0" fill="#2D2D2A" stroke="#7BB5B2" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Office 10</text>
-<g transform="translate(286.0,853.0)"><path d="M10.0,0 H84.0 V10.0 A10.0,10.0 0 0 1 74.0,20.0 H0 V10.0 A10.0,10.0 0 0 1 10.0,0 Z" fill="#2D2D2A"/><text x="42.0" y="13.8" text-anchor="middle" class="bt" font-weight="700" font-size="11.0" letter-spacing=".6" fill="#EAE6DD">AVAILABLE</text></g>
+<text x="328" y="845" text-anchor="middle" class="ys" font-size="17.0" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Office 10</text>
+<text x="328" y="862.0" text-anchor="middle" class="bt" font-size="11.0" fill="#2D2D2A" fill-opacity=".65" stroke="#DDD7C9" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Let · 70 sq ft</text>
 <text x="150" y="865" text-anchor="middle" class="ys" font-size="23.0" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Office 11</text>
 <text x="150" y="886.0" text-anchor="middle" class="bt" font-size="12.5" fill="#2D2D2A" fill-opacity=".65" stroke="#DDD7C9" stroke-width="5.0" paint-order="stroke" stroke-linejoin="round">Let · 203 sq ft</text>
 <text x="358" y="1015" text-anchor="middle" class="bt" font-size="14.0" letter-spacing="2.2" fill="#6b6a63">RECEPTION</text>
@@ -284,9 +284,7 @@
 <line x1="720" y1="290" x2="1340" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="720" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
 <text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 28 Oct 2026</text>
-<path d="M738,369 H756 V387 A18,18 0 0 1 738,405 H720 V387 A18,18 0 0 1 738,369 Z" fill="#7BB5B2"/>
-<text x="774" y="395" class="ys" font-size="26" fill="#2D2D2A">Office 10</text>
-<text x="950" y="395" class="bt" font-size="19" fill="#6b6a63">70 sq ft · 2 desks</text>
+<text x="720" y="395" class="bt" font-size="19" fill="#6b6a63">Fully let. Ask us about upcoming space.</text>
 <line x1="720" y1="483" x2="1340" y2="483" stroke="#2D2D2A" stroke-opacity=".2"/>
 <rect x="720" y="520" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="758" y="538" class="bt" font-size="18" fill="#2D2D2A">Available</text>
