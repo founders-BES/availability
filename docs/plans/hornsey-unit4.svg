@@ -250,7 +250,7 @@
 <text x="720" y="245" class="bt" font-size="19" fill="#6b6a63">9 private offices · open-plan desks</text>
 <line x1="720" y1="290" x2="1340" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="720" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
-<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 27 Oct 2026</text>
+<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 28 Oct 2026</text>
 <text x="720" y="395" class="bt" font-size="19" fill="#6b6a63">Nothing free today.</text>
 <text x="720" y="473" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
 <path d="M738,493 H756 V511 A18,18 0 0 1 738,529 H720 V511 A18,18 0 0 1 738,493 Z" fill="#C3DEDB"/>
