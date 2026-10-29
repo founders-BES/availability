@@ -9,11 +9,11 @@
 <polygon points="-244.2,571.0 218.2,838.0 145.5,880.0 -29.4,779.0 -297.9,934.0 -585.4,768.0" fill="#E2DCCF"/>
 <polygon points="294.4,616.0 448.6,705.0 218.2,838.0 64.1,749.0" fill="#E2DCCF"/>
 <polygon points="-13.9,438.0 180.1,550.0 -50.2,683.0 -244.2,571.0" fill="#E2DCCF"/>
-<polygon points="386.2,813.0 554.3,910.0 341.2,1033.0 246.0,978.0 263.3,968.0 226.9,905.0" fill="#C3DEDB"/>
+<polygon points="386.2,813.0 554.3,910.0 341.2,1033.0 246.0,978.0 263.3,968.0 226.9,905.0" fill="#7BB5B2"/>
 <polygon points="-29.4,779.0 145.5,880.0 -123.0,1035.0 -297.9,934.0" fill="#E2DCCF"/>
 <polygon points="533.5,728.0 701.5,825.0 554.3,910.0 386.2,813.0" fill="#E2DCCF"/>
-<polygon points="685.9,640.0 853.9,737.0 701.5,825.0 533.5,728.0" fill="#E2DCCF"/>
-<polygon points="807.1,570.0 975.1,667.0 853.9,737.0 685.9,640.0" fill="#C3DEDB"/>
+<polygon points="685.9,640.0 853.9,737.0 701.5,825.0 533.5,728.0" fill="#C3DEDB"/>
+<polygon points="807.1,570.0 975.1,667.0 853.9,737.0 685.9,640.0" fill="#7BB5B2"/>
 <polygon points="180.1,550.0 294.4,616.0 64.1,749.0 -50.2,683.0" fill="#E2DCCF"/>
 <polygon points="233.8,301.0 349.9,368.0 168.0,473.0 52.0,406.0" fill="#D2CDC2"/>
 <polyline points="213.0,313.0 329.1,380.0" stroke="#2D2D2A" stroke-opacity="0.3" fill="none"/>
@@ -421,18 +421,20 @@
 <g transform="translate(-66.8,511.3) scale(1.374)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">3</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">150 sq ft</text></g>
 <g transform="translate(-58.2,852.3) scale(1.374)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">5</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">225 sq ft</text></g>
 <g transform="translate(567.1,749.3) scale(1.374)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">6</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">87 sq ft</text></g>
-<g transform="translate(702.2,671.3) scale(1.374)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">7</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">80 sq ft</text></g>
 <g transform="translate(61.3,641.3) scale(1.374)"><circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">9</text><text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">104 sq ft</text></g>
 <polyline points="373.1,928.6 730.5,1134.8" fill="none" stroke="#2D2D2A" stroke-width="3.02"/>
 <circle cx="373.1" cy="928.6" r="6.87" fill="#2D2D2A"/>
-<g transform="translate(730.5,1086.7) scale(1.374)"><path d="M30,0 H230 V40 A30,30 0 0 1 200,70 H0 V30 A30,30 0 0 1 30,0 Z" fill="#2D2D2A"/><text x="115.0" y="31" text-anchor="middle" class="ys" font-size="25" fill="#EAE6DD">Office 4</text><text x="115.0" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="#7BB5B2">FROM 19 NOV · 161 SQ FT</text></g>
+<g transform="translate(730.5,1086.7) scale(1.374)"><path d="M30,0 H230 V40 A30,30 0 0 1 200,70 H0 V30 A30,30 0 0 1 30,0 Z" fill="#2D2D2A"/><text x="115.0" y="31" text-anchor="middle" class="ys" font-size="25" fill="#EAE6DD">Office 4</text><text x="115.0" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="#7BB5B2">AVAILABLE · 161 SQ FT</text></g>
+<polyline points="702.2,714.6 1059.6,920.8" fill="none" stroke="#2D2D2A" stroke-width="3.02"/>
+<circle cx="702.2" cy="714.6" r="6.87" fill="#2D2D2A"/>
+<g transform="translate(1059.6,872.7) scale(1.374)"><path d="M30,0 H230 V40 A30,30 0 0 1 200,70 H0 V30 A30,30 0 0 1 30,0 Z" fill="#2D2D2A"/><text x="115.0" y="31" text-anchor="middle" class="ys" font-size="25" fill="#EAE6DD">Office 7</text><text x="115.0" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="#7BB5B2">COMING SOON · 80 SQ FT</text></g>
 <polyline points="820.0,626.6 820.0,214.2" fill="none" stroke="#2D2D2A" stroke-width="3.02"/>
 <circle cx="820.0" cy="626.6" r="6.87" fill="#2D2D2A"/>
-<g transform="translate(661.9,118.0) scale(1.374)"><path d="M30,0 H230 V40 A30,30 0 0 1 200,70 H0 V30 A30,30 0 0 1 30,0 Z" fill="#2D2D2A"/><text x="115.0" y="31" text-anchor="middle" class="ys" font-size="25" fill="#EAE6DD">Office 8</text><text x="115.0" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="#7BB5B2">FROM 1 NOV · 67 SQ FT</text></g>
+<g transform="translate(661.9,118.0) scale(1.374)"><path d="M30,0 H230 V40 A30,30 0 0 1 200,70 H0 V30 A30,30 0 0 1 30,0 Z" fill="#2D2D2A"/><text x="115.0" y="31" text-anchor="middle" class="ys" font-size="25" fill="#EAE6DD">Office 8</text><text x="115.0" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="#7BB5B2">AVAILABLE · 67 SQ FT</text></g>
 </g>
 <text x="70" y="105" class="bt" font-size="15" letter-spacing="3" fill="#6b6a63">HORNSEY · 465 HORNSEY ROAD, N19 · FIRST FLOOR</text>
 <text x="70" y="180" class="ys" font-size="68" fill="#2D2D2A" letter-spacing="-1.3">Unit 4</text>
-<text x="70" y="222" class="bt" font-size="19" fill="#6b6a63">9 private offices · 0 available, 2 coming up as of 29 Oct 2026</text>
+<text x="70" y="222" class="bt" font-size="19" fill="#6b6a63">9 private offices · 2 available, 1 coming up as of 29 Oct 2026</text>
 <rect x="72" y="272" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="110" y="290" class="bt" font-size="18" fill="#2D2D2A">Available</text>
 <rect x="72" y="310" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
