@@ -295,7 +295,7 @@
 <text x="720" y="245" class="bt" font-size="19" fill="#6b6a63">12 private offices</text>
 <line x1="720" y1="290" x2="1340" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="720" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
-<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 28 Oct 2026</text>
+<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 29 Oct 2026</text>
 <path d="M738,369 H756 V387 A18,18 0 0 1 738,405 H720 V387 A18,18 0 0 1 738,369 Z" fill="#7BB5B2"/>
 <text x="774" y="395" class="ys" font-size="26" fill="#2D2D2A">Office 6</text>
 <text x="950" y="395" class="bt" font-size="19" fill="#6b6a63">125 sq ft · 3 desks</text>
