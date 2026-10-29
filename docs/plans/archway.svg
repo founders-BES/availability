@@ -47,7 +47,7 @@
 <polyline points="958.0,873.0 1010.0,873.0" stroke="#2D2D2A" stroke-opacity="0.35" fill="none"/>
 <polyline points="958.0,882.0 1010.0,882.0" stroke="#2D2D2A" stroke-opacity="0.35" fill="none"/>
 <polyline points="958.0,891.0 1010.0,891.0" stroke="#2D2D2A" stroke-opacity="0.35" fill="none"/>
-<polygon points="928.0,352.0 1072.0,352.0 1072.0,500.0 928.0,500.0" fill="#C3DEDB"/>
+<polygon points="928.0,352.0 1072.0,352.0 1072.0,500.0 928.0,500.0" fill="#7BB5B2"/>
 <polygon points="928.0,252.0 1072.0,252.0 1072.0,352.0 928.0,352.0" fill="#DDD7C9"/>
 <polygon points="912.0,87.0 1072.0,87.0 1072.0,252.0 928.0,252.0 928.0,182.0 912.0,182.0" fill="#C3DEDB"/>
 <polygon points="843.0,87.0 912.0,87.0 912.0,182.0 843.0,182.0" fill="#DDD7C9"/>
@@ -356,7 +356,7 @@
 <line x1="141" y1="357" x2="141" y2="386" stroke="#2D2D2A" stroke-width="1.9800000000000002" stroke-linecap="round"/><path d="M141,386 A29,29 0 0 1 170,357" fill="none" stroke="#2D2D2A" stroke-width="1.1880000000000002" stroke-dasharray="2 3" opacity=".7"/>
 <line x1="750" y1="895" x2="720" y2="895" stroke="#2D2D2A" stroke-width="1.9800000000000002" stroke-linecap="round"/><path d="M720,895 A30,30 0 0 0 750,865" fill="none" stroke="#2D2D2A" stroke-width="1.1880000000000002" stroke-dasharray="2 3" opacity=".7"/>
 <circle cx="995" cy="422.4" r="21.8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="2.0"/><text x="995" y="431.1" text-anchor="middle" class="ys" font-size="22.8" fill="#EAE6DD">1</text>
-<text x="995" y="461.5" text-anchor="middle" class="bt" font-size="14.5" fill="#2D2D2A" fill-opacity=".7" stroke="#C3DEDB" stroke-width="7.25" paint-order="stroke" stroke-linejoin="round">180 ft²</text>
+<text x="995" y="461.5" text-anchor="middle" class="bt" font-size="14.5" fill="#2D2D2A" fill-opacity=".7" stroke="#7BB5B2" stroke-width="7.25" paint-order="stroke" stroke-linejoin="round">180 ft²</text>
 <circle cx="995" cy="292.4" r="21.8" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="2.0"/><text x="995" y="301.1" text-anchor="middle" class="ys" font-size="22.8" fill="#2D2D2A">2</text>
 <text x="995" y="331.5" text-anchor="middle" class="bt" font-size="14.5" fill="#2D2D2A" fill-opacity=".7" stroke="#DDD7C9" stroke-width="7.25" paint-order="stroke" stroke-linejoin="round">129 ft²</text>
 <circle cx="985" cy="157.4" r="21.8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="2.0"/><text x="985" y="166.1" text-anchor="middle" class="ys" font-size="22.8" fill="#EAE6DD">3</text>
@@ -427,36 +427,35 @@
 <line x1="910" y1="290" x2="1450" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="910" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
 <text x="1450" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 29 Oct 2026</text>
-<text x="910" y="395" class="bt" font-size="19" fill="#6b6a63">Nothing free today.</text>
-<text x="910" y="473" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
-<path d="M928,493 H946 V511 A18,18 0 0 1 928,529 H910 V511 A18,18 0 0 1 928,493 Z" fill="#C3DEDB"/>
-<text x="964" y="519" class="ys" font-size="24" fill="#2D2D2A">Office 1</text>
-<text x="1140" y="519" class="bt" font-size="19" fill="#6b6a63">180 sq ft · from 5 Nov</text>
-<path d="M928,537 H946 V555 A18,18 0 0 1 928,573 H910 V555 A18,18 0 0 1 928,537 Z" fill="#C3DEDB"/>
-<text x="964" y="563" class="ys" font-size="24" fill="#2D2D2A">Office 3</text>
-<text x="1140" y="563" class="bt" font-size="19" fill="#6b6a63">205 sq ft · date to be confirmed</text>
-<path d="M928,581 H946 V599 A18,18 0 0 1 928,617 H910 V599 A18,18 0 0 1 928,581 Z" fill="#C3DEDB"/>
-<text x="964" y="607" class="ys" font-size="24" fill="#2D2D2A">Office 17</text>
-<text x="1140" y="607" class="bt" font-size="19" fill="#6b6a63">214 sq ft · date to be confirmed</text>
-<line x1="910" y1="681" x2="1450" y2="681" stroke="#2D2D2A" stroke-opacity=".2"/>
-<rect x="910" y="718" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="736" class="bt" font-size="18" fill="#2D2D2A">Available</text>
-<rect x="910" y="750" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="768" class="bt" font-size="18" fill="#2D2D2A">Coming up</text>
-<rect x="910" y="782" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="800" class="bt" font-size="18" fill="#2D2D2A">Let</text>
-<rect x="910" y="814" width="24" height="24" rx="3" fill="#F6F3EC" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="832" class="bt" font-size="18" fill="#2D2D2A">Shared spaces</text>
-<circle cx="1300" cy="890" r="34" fill="none" stroke="#2D2D2A" stroke-opacity=".35"/><path d="M1326.0,890.0 L1274.0,890.0" stroke="#2D2D2A" stroke-width="2.4" fill="none"/><path d="M1286.0,883.0 L1274.0,890.0 L1286.0,897.0" stroke="#2D2D2A" stroke-width="2.4" fill="none" stroke-linejoin="round"/><text x="1250.0" y="898.0" text-anchor="middle" class="ys" font-size="24" fill="#2D2D2A">N</text>
-<rect x="910.0" y="888" width="28.9" height="8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="1"/>
-<rect x="938.9" y="888" width="28.9" height="8" fill="none" stroke="#2D2D2A" stroke-width="1"/>
-<rect x="967.8" y="888" width="28.9" height="8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="1"/>
-<rect x="996.7" y="888" width="28.9" height="8" fill="none" stroke="#2D2D2A" stroke-width="1"/>
-<rect x="1025.6" y="888" width="28.9" height="8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="1"/>
-<text x="910" y="918" class="bt" font-size="14" fill="#6b6a63">0 m</text>
-<text x="1054.5" y="918" text-anchor="end" class="bt" font-size="14" fill="#6b6a63">5 m</text>
-<text x="910" y="968" class="bt" font-size="13.5" fill="#6b6a63">Drawn to scale. Sizes are approximate and for guidance only.</text>
-<text x="910" y="992" class="bt" font-size="13.5" fill="#6b6a63">Roof terrace on the same floor.</text>
+<path d="M928,369 H946 V387 A18,18 0 0 1 928,405 H910 V387 A18,18 0 0 1 928,369 Z" fill="#7BB5B2"/>
+<text x="964" y="395" class="ys" font-size="26" fill="#2D2D2A">Office 1</text>
+<text x="1140" y="395" class="bt" font-size="19" fill="#6b6a63">180 sq ft · 6 desks</text>
+<text x="910" y="459" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
+<path d="M928,479 H946 V497 A18,18 0 0 1 928,515 H910 V497 A18,18 0 0 1 928,479 Z" fill="#C3DEDB"/>
+<text x="964" y="505" class="ys" font-size="24" fill="#2D2D2A">Office 3</text>
+<text x="1140" y="505" class="bt" font-size="19" fill="#6b6a63">205 sq ft · date to be confirmed</text>
+<path d="M928,523 H946 V541 A18,18 0 0 1 928,559 H910 V541 A18,18 0 0 1 928,523 Z" fill="#C3DEDB"/>
+<text x="964" y="549" class="ys" font-size="24" fill="#2D2D2A">Office 17</text>
+<text x="1140" y="549" class="bt" font-size="19" fill="#6b6a63">214 sq ft · date to be confirmed</text>
+<line x1="910" y1="623" x2="1450" y2="623" stroke="#2D2D2A" stroke-opacity=".2"/>
+<rect x="910" y="660" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="678" class="bt" font-size="18" fill="#2D2D2A">Available</text>
+<rect x="910" y="692" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="710" class="bt" font-size="18" fill="#2D2D2A">Coming up</text>
+<rect x="910" y="724" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="742" class="bt" font-size="18" fill="#2D2D2A">Let</text>
+<rect x="910" y="756" width="24" height="24" rx="3" fill="#F6F3EC" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="774" class="bt" font-size="18" fill="#2D2D2A">Shared spaces</text>
+<circle cx="1300" cy="832" r="34" fill="none" stroke="#2D2D2A" stroke-opacity=".35"/><path d="M1326.0,832.0 L1274.0,832.0" stroke="#2D2D2A" stroke-width="2.4" fill="none"/><path d="M1286.0,825.0 L1274.0,832.0 L1286.0,839.0" stroke="#2D2D2A" stroke-width="2.4" fill="none" stroke-linejoin="round"/><text x="1250.0" y="840.0" text-anchor="middle" class="ys" font-size="24" fill="#2D2D2A">N</text>
+<rect x="910.0" y="830" width="28.9" height="8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="1"/>
+<rect x="938.9" y="830" width="28.9" height="8" fill="none" stroke="#2D2D2A" stroke-width="1"/>
+<rect x="967.8" y="830" width="28.9" height="8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="1"/>
+<rect x="996.7" y="830" width="28.9" height="8" fill="none" stroke="#2D2D2A" stroke-width="1"/>
+<rect x="1025.6" y="830" width="28.9" height="8" fill="#2D2D2A" stroke="#2D2D2A" stroke-width="1"/>
+<text x="910" y="860" class="bt" font-size="14" fill="#6b6a63">0 m</text>
+<text x="1054.5" y="860" text-anchor="end" class="bt" font-size="14" fill="#6b6a63">5 m</text>
+<text x="910" y="910" class="bt" font-size="13.5" fill="#6b6a63">Drawn to scale. Sizes are approximate and for guidance only.</text>
+<text x="910" y="934" class="bt" font-size="13.5" fill="#6b6a63">Roof terrace on the same floor.</text>
 <text x="910" y="1080" class="ys" font-size="30" fill="#2D2D2A">Bespoke Spaces</text>
 <text x="910" y="1108" class="bt" font-size="15" fill="#6b6a63">bespokespaces.co · Book a viewing</text>
 </svg>
