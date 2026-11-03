@@ -15,7 +15,7 @@
 <polyline points="1257.0,1048.0 1257.0,1195.0" stroke="#2D2D2A" stroke-opacity="0.35" fill="none"/>
 <polyline points="1297.0,1048.0 1297.0,1195.0" stroke="#2D2D2A" stroke-opacity="0.35" fill="none"/>
 <polygon points="877.0,815.0 1312.0,815.0 1312.0,1040.0 877.0,1040.0" fill="#DDD7C9"/>
-<polygon points="1022.0,623.0 1312.0,623.0 1312.0,815.0 1022.0,815.0" fill="#C3DEDB"/>
+<polygon points="1022.0,623.0 1312.0,623.0 1312.0,815.0 1022.0,815.0" fill="#7BB5B2"/>
 <polygon points="1022.0,455.0 1312.0,455.0 1312.0,623.0 1022.0,623.0" fill="#DDD7C9"/>
 <polygon points="1022.0,245.0 1312.0,245.0 1312.0,455.0 1022.0,455.0" fill="#DDD7C9"/>
 <polygon points="892.0,18.0 1312.0,18.0 1312.0,245.0 1022.0,245.0 1022.0,155.0 892.0,155.0" fill="#DDD7C9"/>
@@ -250,8 +250,8 @@
 <line x1="128" y1="600" x2="80" y2="600" stroke="#2D2D2A" stroke-width="4.4" stroke-linecap="round"/><path d="M80,600 A48,48 0 0 1 128,648" fill="none" stroke="#2D2D2A" stroke-width="2.64" stroke-dasharray="2 3" opacity=".7"/>
 <text x="1095" y="925" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 1</text>
 <text x="1095" y="958.6" text-anchor="middle" class="bt" font-size="20.0" fill="#2D2D2A" fill-opacity=".65" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">260 sq ft</text>
-<text x="1165" y="730" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#C3DEDB" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 2</text>
-<g transform="translate(1075.4,742.8)"><path d="M16.0,0 H179.20000000000002 V16.0 A16.0,16.0 0 0 1 163.20000000000002,32.0 H0 V16.0 A16.0,16.0 0 0 1 16.0,0 Z" fill="#2D2D2A"/><text x="89.6" y="22.1" text-anchor="middle" class="bt" font-weight="700" font-size="17.6" letter-spacing=".6" fill="#EAE6DD">FROM 3 NOV</text></g>
+<text x="1165" y="730" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#7BB5B2" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 2</text>
+<g transform="translate(1097.8,742.8)"><path d="M16.0,0 H134.4 V16.0 A16.0,16.0 0 0 1 118.4,32.0 H0 V16.0 A16.0,16.0 0 0 1 16.0,0 Z" fill="#2D2D2A"/><text x="67.2" y="22.1" text-anchor="middle" class="bt" font-weight="700" font-size="17.6" letter-spacing=".6" fill="#EAE6DD">AVAILABLE</text></g>
 <text x="1165" y="540" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 3</text>
 <text x="1165" y="573.6" text-anchor="middle" class="bt" font-size="20.0" fill="#2D2D2A" fill-opacity=".65" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">113 sq ft</text>
 <text x="1165" y="345" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 4</text>
@@ -312,12 +312,12 @@
 <text x="910" y="245" class="bt" font-size="19" fill="#6b6a63">14 private offices · meeting room</text>
 <line x1="910" y1="290" x2="1450" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="910" y="345" class="ys" font-size="30" fill="#2D2D2A">This office</text>
-<path d="M932,377 H954 V399 A22,22 0 0 1 932,421 H910 V399 A22,22 0 0 1 932,377 Z" fill="#C3DEDB"/>
+<path d="M932,377 H954 V399 A22,22 0 0 1 932,421 H910 V399 A22,22 0 0 1 932,377 Z" fill="#7BB5B2"/>
 <text x="972" y="407" class="ys" font-size="34" fill="#2D2D2A">Office 2</text>
 <text x="972" y="447" class="bt" font-size="19" fill="#6b6a63">113 sq ft · 3 desks</text>
-<text x="972" y="479" class="bt" font-size="19" font-weight="600" fill="#2D2D2A">Available from 3 Nov</text>
+<text x="972" y="479" class="bt" font-size="19" font-weight="600" fill="#2D2D2A">Available now</text>
 <line x1="910" y1="529" x2="1450" y2="529" stroke="#2D2D2A" stroke-opacity=".2"/>
-<rect x="910" y="566" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
+<rect x="910" y="566" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="948" y="584" class="bt" font-size="18" fill="#2D2D2A">This office</text>
 <rect x="910" y="606" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="948" y="624" class="bt" font-size="18" fill="#2D2D2A">Other offices</text>
