@@ -29,6 +29,13 @@ BUILDINGS = [
 LABEL = re.compile(r"^\s*office\s+([0-9]+[a-z]?)\s*,\s*(?:unit\s*([0-9]+)|archway)\s*$", re.I)
 
 
+def _price(o):
+    """Price from the feed (the occupancy schedule is the source of truth), e.g. '£2,400 + VAT'."""
+    v = (o.get("vat") or "").strip().lower()
+    tail = {"+ vat": " + VAT", "no vat": ", no VAT", "vat included": " incl. VAT"}.get(v, "")
+    return f"£{o['price_n']:,}{tail}"
+
+
 def _when(o):
     """rank/date from build.py -> the plan's 'coming up' text."""
     if o["rank"] == 1 and o["d"]:
@@ -48,7 +55,7 @@ def build(data, today, out_dir, write):
     for site, mod, slug, title, unit in BUILDINGS:
         P = importlib.import_module(mod)
         ids = {o[0] for o in P.OFFICES}
-        avail, soon, listed = set(), {}, []
+        avail, soon, listed, prices = set(), {}, [], {}
         for o in data.get(site, []):
             m = LABEL.match(o["label"])
             if not m:
@@ -66,14 +73,15 @@ def build(data, today, out_dir, write):
             else:
                 continue  # under offer: shown as let
             listed.append(oid)
+            prices[oid] = _price(o)
         # single-office versions for each listed office's own page (no date, so they only change with status)
         for oid in listed:
             one_a = {oid} if oid in avail else set()
             one_s = {oid: soon[oid]} if oid in soon else {}
             name = f"{slug}-office-{oid.lower()}.svg"
             keep.add(name)
-            changed |= write(os.path.join(out_dir, "office", name), render.flat(P, one_a, "", False, one_s, focus=oid))
-        flat = render.flat(P, avail, date_s, False, soon)
+            changed |= write(os.path.join(out_dir, "office", name), render.flat(P, one_a, "", False, one_s, focus=oid, prices=prices))
+        flat = render.flat(P, avail, date_s, False, soon, prices=prices)
         iso = render.isometric(P, avail, date_s, False, soon)
         changed |= write(os.path.join(out_dir, f"{slug}.svg"), flat)
         changed |= write(os.path.join(out_dir, f"{slug}-3d.svg"), iso)

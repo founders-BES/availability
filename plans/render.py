@@ -2,7 +2,7 @@
 
 usage: python3 plan.py <building_module> <outdir> [--avail 6,8,11 --date "26 Oct 2026"]
 Without --avail it renders the base plan (no availability)."""
-import math, base64, os, sys, importlib, argparse
+import math, base64, os, re, sys, importlib, argparse
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
@@ -144,8 +144,10 @@ def head(W, H, embed):
             f'<rect width="{W}" height="{H}" fill="{S["page"]}"/>']
 
 # ------------------------------------------------------------------ flat
-def flat(P, avail, date, embed=True, soon=None, focus=None):
-    """focus = an office id: single-office version for that office's own page."""
+def flat(P, avail, date, embed=True, soon=None, focus=None, prices=None):
+    """focus = an office id: single-office version for that office's own page.
+    prices = {office id: '£2,400 + VAT'} from the feed; shown beside desks in the side panel."""
+    prices = prices or {}
     base = avail is None
     avail = avail or set()
     soon = soon or {}
@@ -301,14 +303,14 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
         o.append(f'<text x="{px}" y="{yy}" class="ys" font-size="30" fill="{ink}">This office</text>'); yy += 62
         o.append(leaf(px, yy - 30, 44, 44, col, r=22))
         o.append(f'<text x="{px+62}" y="{yy}" class="ys" font-size="34" fill="{ink}">{of["name"]}</text>'); yy += 40
-        o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" fill="{sub}">{desc_(of, dk)}</text>'); yy += 32
+        o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" fill="{sub}">{" · ".join(x for x in [desc_(of, dk), re.sub(r'^(£[0-9,]*[0-9])', r'\1/month', prices.get(focus, ''))] if x)}</text>'); yy += 32
         o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" font-weight="600" fill="{ink}">{status}</text>'); yy += 50
         o.append(f'<line x1="{px}" y1="{yy}" x2="{px+LW}" y2="{yy}" stroke="{ink}" stroke-opacity=".2"/>')
         yy += 55
         legend = [('This office', col), ('Other offices', S['let']), ('Shared spaces', S['floor'])]
     elif not base:
         o.append(f'<text x="{px}" y="{yy}" class="ys" font-size="30" fill="{ink}">Available now</text>')
-        o.append(f'<text x="{px+LW}" y="{yy}" text-anchor="end" class="bt" font-size="15" fill="{sub}">As of {date}</text>')
+        o.append(f'<text x="{px+LW}" y="{yy}" text-anchor="end" class="bt" font-size="15" fill="{sub}">{"Prices per month · as of " if prices else "As of "}{date}</text>')
         yy += 50
         if not avail:
             o.append(f'<text x="{px}" y="{yy}" class="bt" font-size="19" fill="{sub}">{"Nothing free today." if soon else "Fully let. Ask us about upcoming space."}</text>'); yy += 58
@@ -317,7 +319,7 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
             o.append(leaf(px, yy - 26, 36, 36, S['avail'], r=18))
             o.append(f'<text x="{px+54}" y="{yy}" class="ys" font-size="26" fill="{ink}">{of["name"]}</text>')
             dk = P.DESKS_PER.get(oid)
-            o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{desc_(of, dk)}</text>')
+            o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{" · ".join(x for x in [desc_(of, dk), prices.get(oid)] if x)}</text>')
             yy += step
         if soon:
             yy += 20
@@ -326,7 +328,7 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
                 of = next(x for x in offices if x['id'] == oid)
                 o.append(leaf(px, yy - 26, 36, 36, '#C3DEDB', r=18))
                 o.append(f'<text x="{px+54}" y="{yy}" class="ys" font-size="24" fill="{ink}">{of["name"]}</text>')
-                o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{" · ".join(x for x in [desc_(of, P.DESKS_PER.get(oid)), "date to be confirmed" if when == "soon" else "from " + when] if x)}</text>')
+                o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{" · ".join(x for x in [desc_(of, P.DESKS_PER.get(oid)), prices.get(oid), ("date TBC" if prices else "date to be confirmed") if when == "soon" else "from " + when] if x)}</text>')
                 yy += step
         yy += 30
         o.append(f'<line x1="{px}" y1="{yy}" x2="{px+LW}" y2="{yy}" stroke="{ink}" stroke-opacity=".2"/>')
