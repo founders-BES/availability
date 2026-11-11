@@ -21,7 +21,7 @@ PAGE_URL = "https://availability.bespokespaces.co/"
 MAIN = "https://www.bespokespaces.co"
 TZ = ZoneInfo("Europe/London")
 
-ALLOWED = ["site", "label", "product", "desks", "sqft", "price", "vat", "status", "available_from"]
+ALLOWED = ["site", "label", "product", "desks", "price", "vat", "status", "available_from"]
 
 # Master Facts guard: lowest advertised office price per site. A room below this fails the build.
 MIN_PRICE = {"archway": 595, "hornsey": 450}
