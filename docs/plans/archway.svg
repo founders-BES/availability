@@ -410,17 +410,17 @@
 <text x="910" y="245" class="bt" font-size="19" fill="#6b6a63">17 private offices · coworking · roof terrace</text>
 <line x1="910" y1="290" x2="1450" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="910" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
-<text x="1450" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 11 Nov 2026</text>
+<text x="1450" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">Prices per month · as of 11 Nov 2026</text>
 <path d="M928,369 H946 V387 A18,18 0 0 1 928,405 H910 V387 A18,18 0 0 1 928,369 Z" fill="#7BB5B2"/>
 <text x="964" y="395" class="ys" font-size="26" fill="#2D2D2A">Office 1</text>
-<text x="1140" y="395" class="bt" font-size="19" fill="#6b6a63">6 desks</text>
+<text x="1140" y="395" class="bt" font-size="19" fill="#6b6a63">6 desks · £2,200 + VAT</text>
 <path d="M928,413 H946 V431 A18,18 0 0 1 928,449 H910 V431 A18,18 0 0 1 928,413 Z" fill="#7BB5B2"/>
 <text x="964" y="439" class="ys" font-size="26" fill="#2D2D2A">Office 3</text>
-<text x="1140" y="439" class="bt" font-size="19" fill="#6b6a63">7 desks</text>
+<text x="1140" y="439" class="bt" font-size="19" fill="#6b6a63">7 desks · £2,400 + VAT</text>
 <text x="910" y="503" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
 <path d="M928,523 H946 V541 A18,18 0 0 1 928,559 H910 V541 A18,18 0 0 1 928,523 Z" fill="#C3DEDB"/>
 <text x="964" y="549" class="ys" font-size="24" fill="#2D2D2A">Office 17</text>
-<text x="1140" y="549" class="bt" font-size="19" fill="#6b6a63">6 desks · from 1 Dec</text>
+<text x="1140" y="549" class="bt" font-size="19" fill="#6b6a63">6 desks · £2,200 + VAT · from 1 Dec</text>
 <line x1="910" y1="623" x2="1450" y2="623" stroke="#2D2D2A" stroke-opacity=".2"/>
 <rect x="910" y="660" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="948" y="678" class="bt" font-size="18" fill="#2D2D2A">Available</text>

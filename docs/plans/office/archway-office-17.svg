@@ -412,7 +412,7 @@
 <text x="910" y="345" class="ys" font-size="30" fill="#2D2D2A">This office</text>
 <path d="M932,377 H954 V399 A22,22 0 0 1 932,421 H910 V399 A22,22 0 0 1 932,377 Z" fill="#C3DEDB"/>
 <text x="972" y="407" class="ys" font-size="34" fill="#2D2D2A">Office 17</text>
-<text x="972" y="447" class="bt" font-size="19" fill="#6b6a63">6 desks</text>
+<text x="972" y="447" class="bt" font-size="19" fill="#6b6a63">6 desks · £2,200/month + VAT</text>
 <text x="972" y="479" class="bt" font-size="19" font-weight="600" fill="#2D2D2A">Available from 1 Dec</text>
 <line x1="910" y1="529" x2="1450" y2="529" stroke="#2D2D2A" stroke-opacity=".2"/>
 <rect x="910" y="566" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>

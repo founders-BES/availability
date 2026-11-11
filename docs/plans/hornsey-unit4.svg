@@ -244,17 +244,17 @@
 <text x="720" y="245" class="bt" font-size="19" fill="#6b6a63">9 private offices · open-plan desks</text>
 <line x1="720" y1="290" x2="1340" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="720" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
-<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">As of 11 Nov 2026</text>
+<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">Prices per month · as of 11 Nov 2026</text>
 <path d="M738,369 H756 V387 A18,18 0 0 1 738,405 H720 V387 A18,18 0 0 1 738,369 Z" fill="#7BB5B2"/>
 <text x="774" y="395" class="ys" font-size="26" fill="#2D2D2A">Office 7</text>
-<text x="950" y="395" class="bt" font-size="19" fill="#6b6a63">2 desks</text>
+<text x="950" y="395" class="bt" font-size="19" fill="#6b6a63">2 desks · £750, no VAT</text>
 <path d="M738,413 H756 V431 A18,18 0 0 1 738,449 H720 V431 A18,18 0 0 1 738,413 Z" fill="#7BB5B2"/>
 <text x="774" y="439" class="ys" font-size="26" fill="#2D2D2A">Office 8</text>
-<text x="950" y="439" class="bt" font-size="19" fill="#6b6a63">2 desks</text>
+<text x="950" y="439" class="bt" font-size="19" fill="#6b6a63">2 desks · £750, no VAT</text>
 <text x="720" y="503" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
 <path d="M738,523 H756 V541 A18,18 0 0 1 738,559 H720 V541 A18,18 0 0 1 738,523 Z" fill="#C3DEDB"/>
 <text x="774" y="549" class="ys" font-size="24" fill="#2D2D2A">Office 4</text>
-<text x="950" y="549" class="bt" font-size="19" fill="#6b6a63">1 desk · from 19 Nov</text>
+<text x="950" y="549" class="bt" font-size="19" fill="#6b6a63">1 desk · £950, no VAT · from 19 Nov</text>
 <line x1="720" y1="623" x2="1340" y2="623" stroke="#2D2D2A" stroke-opacity=".2"/>
 <rect x="720" y="660" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="758" y="678" class="bt" font-size="18" fill="#2D2D2A">Available</text>
