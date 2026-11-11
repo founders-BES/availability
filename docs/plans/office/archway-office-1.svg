@@ -184,9 +184,10 @@
 <circle cx="858.3" cy="1030.2" r="5.8500000000000005" fill="#2D2D2A" opacity=".16"/>
 <rect x="785" y="985" width="88" height="38" rx="2.7" fill="#FBFAF6" stroke="#2D2D2A" stroke-opacity=".28" stroke-width="0.9"/>
 <line x1="788" y1="1004.0" x2="870" y2="1004.0" stroke="#2D2D2A" stroke-opacity=".18" stroke-width="0.9"/>
-<circle cx="922.2" cy="1006.5" r="5.8500000000000005" fill="#2D2D2A" opacity=".16"/>
-<circle cx="922.2" cy="1029.5" r="5.8500000000000005" fill="#2D2D2A" opacity=".16"/>
+<circle cx="896.0" cy="987.8" r="5.8500000000000005" fill="#2D2D2A" opacity=".16"/>
+<circle cx="896.0" cy="1048.2" r="5.8500000000000005" fill="#2D2D2A" opacity=".16"/>
 <rect x="877" y="995" width="38" height="46" rx="2.7" fill="#FBFAF6" stroke="#2D2D2A" stroke-opacity=".28" stroke-width="0.9"/>
+<line x1="880" y1="1018.0" x2="912" y2="1018.0" stroke="#2D2D2A" stroke-opacity=".18" stroke-width="0.9"/>
 <circle cx="958.8" cy="913.5" r="5.8500000000000005" fill="#2D2D2A" opacity=".16"/>
 <circle cx="958.8" cy="936.5" r="5.8500000000000005" fill="#2D2D2A" opacity=".16"/>
 <rect x="966" y="902" width="24" height="46" rx="2.7" fill="#FBFAF6" stroke="#2D2D2A" stroke-opacity=".28" stroke-width="0.9"/>
