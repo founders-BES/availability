@@ -173,8 +173,8 @@ def people(o):
 
 def sentence(o):
     bits = [o["short"]]
-    detail = ", ".join(x for x in [people(o) and "for " + people(o),
-                                   o["sqft"] and f"about {o['sqft']} sq ft"] if x)
+    # No sq ft on the public site (Ilan, 11 Nov 2026) – team size only.
+    detail = people(o) and "for " + people(o)
     if detail:
         bits.append(detail)
     bits.append(fmt_price(o))
@@ -218,7 +218,7 @@ def offer_ld(o, site):
     }
     if o["d"] and o["rank"] in (0, 1):
         ld["availabilityStarts"] = o["d"].isoformat()
-    desc = ", ".join(x for x in [people(o), o["sqft"] and f"about {o['sqft']} sq ft"] if x)
+    desc = people(o)
     if desc:
         ld["description"] = desc
     return ld
@@ -328,12 +328,11 @@ def render(data, now, plans=None):
             trs = "\n".join(
                 f"<tr><td class=\"room\" data-l=\"Office\">{E(o['short'])}</td>"
                 f"<td data-l=\"Team size\">{E(people(o)) or '–'}</td>"
-                f"<td data-l=\"Size\">{E(o['sqft']) + ' sq ft' if o['sqft'] else '–'}</td>"
                 f"<td data-l=\"Price\">{E(fmt_price(o))}</td>"
                 f"<td data-l=\"Status\"><span class=\"s {o['cls']}\">{E(o['st'])}</span></td></tr>"
                 for o in rows)
             body = (f"<p class=\"summary\">{E(summary(site, rows))}</p>"
-                    "<table><thead><tr><th>Office</th><th>Team size</th><th>Size</th>"
+                    "<table><thead><tr><th>Office</th><th>Team size</th>"
                     f"<th>Price</th><th>Status</th></tr></thead><tbody>\n{trs}\n</tbody></table>"
                     "<h3 style=\"font-size:1rem;margin:20px 0 6px\">In plain words</h3><ul>"
                     + "".join(f"<li>{E(sentence(o))}</li>" for o in rows) + "</ul>")

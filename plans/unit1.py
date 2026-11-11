@@ -117,7 +117,7 @@ PLANTS = [(70, 760), (165, 920), (432, 1135)]
 
 META = dict(site='HORNSEY · 465 HORNSEY ROAD, N19', floor='', title='Unit 1', slug='hornsey-unit1', summary='11 private offices')
 NORTH = (1, 0)
-NOTE = 'South wall: hallway, side exit and stairs to Unit 2. Offices 5 and 6 are let together (272 sq ft).'
+NOTE = 'South wall: hallway, side exit and stairs to Unit 2. Offices 5 and 6 are let together.'
 PINS = {'10': 'down'}
 FLAT_MARGIN = (60, 10, 10, 70)
 

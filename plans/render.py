@@ -5,6 +5,20 @@ Without --avail it renders the base plan (no availability)."""
 import math, base64, os, sys, importlib, argparse
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+
+# Ilan, 11 Nov 2026: no square footage anywhere on public plans (stops clients comparing £/sq ft).
+SHOW_SQFT = False
+
+
+def desc_(of, dk):
+    """Sub-line for an office in the side panel: desks only (sq ft hidden unless SHOW_SQFT)."""
+    parts = []
+    if SHOW_SQFT and of.get('sq'):
+        parts.append(f"{of['sq']} sq ft")
+    if dk:
+        parts.append(f"{dk} desk" + ("" if str(dk) == "1" else "s"))
+    return " · ".join(parts)
+
 FONTDIR = os.path.join(HERE, '..', 'fonts', 'node_modules', '@fontsource')
 
 C = dict(cream='#EAE6DD', char='#2D2D2A', teal='#7BB5B2', mustard='#EDD286')
@@ -226,7 +240,7 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
         halo = S['avail'] if of['id'] in avail else ('#C3DEDB' if of['id'] in soon else S['let'])
         H_ = f' stroke="{halo}" stroke-width="{5*fs_k}" paint-order="stroke" stroke-linejoin="round"'
         rw0 = max(p[0] for p in of['poly']) - min(p[0] for p in of['poly'])
-        sq_txt = f'{of["sq"]} sq ft' if of['sq'] else ''
+        sq_txt = f'{of["sq"]} sq ft' if (of['sq'] and SHOW_SQFT) else ''
         if (getattr(P, 'ALL_BADGES', False) or rw0 < len(of['name']) * fs * 0.5) and len(of['id']) <= 3:
             # compact: number badge for rooms too narrow for "Office N"
             r = 15 * fs_k
@@ -245,9 +259,9 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
                 small = True
             if of['id'] in soon:
                 when = 'COMING SOON' if soon[of['id']] == 'soon' else f'FROM {soon[of["id"]].upper()}'
-                txt = when if small else f'{when} · {sq_txt.upper()}'
+                txt = when if (small or not sq_txt) else f'{when} · {sq_txt.upper()}'
             else:
-                txt = 'AVAILABLE' if small else f'AVAILABLE · {sq_txt.upper()}'
+                txt = 'AVAILABLE' if (small or not sq_txt) else f'AVAILABLE · {sq_txt.upper()}'
             bw = ((112 if of['id'] in soon else 84) if small else 168) * fs_k; bh = (20 if small else 24) * fs_k
             o.append(f'<g transform="translate({lx-bw/2:.1f},{ly+8*fs_k:.1f})">' + leaf(0, 0, bw, bh, C['char'], r=bh/2) +
                      f'<text x="{bw/2:.1f}" y="{bh*0.69:.1f}" text-anchor="middle" class="bt" font-weight="700" font-size="{11*fs_k:.1f}" letter-spacing=".6" fill="{C["cream"]}">{txt}</text></g>')
@@ -287,7 +301,7 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
         o.append(f'<text x="{px}" y="{yy}" class="ys" font-size="30" fill="{ink}">This office</text>'); yy += 62
         o.append(leaf(px, yy - 30, 44, 44, col, r=22))
         o.append(f'<text x="{px+62}" y="{yy}" class="ys" font-size="34" fill="{ink}">{of["name"]}</text>'); yy += 40
-        o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" fill="{sub}">{of["sq"]} sq ft{f" · {dk} desks" if dk else ""}</text>'); yy += 32
+        o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" fill="{sub}">{desc_(of, dk)}</text>'); yy += 32
         o.append(f'<text x="{px+62}" y="{yy}" class="bt" font-size="19" font-weight="600" fill="{ink}">{status}</text>'); yy += 50
         o.append(f'<line x1="{px}" y1="{yy}" x2="{px+LW}" y2="{yy}" stroke="{ink}" stroke-opacity=".2"/>')
         yy += 55
@@ -303,7 +317,7 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
             o.append(leaf(px, yy - 26, 36, 36, S['avail'], r=18))
             o.append(f'<text x="{px+54}" y="{yy}" class="ys" font-size="26" fill="{ink}">{of["name"]}</text>')
             dk = P.DESKS_PER.get(oid)
-            o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{of["sq"]} sq ft{f" · {dk} desks" if dk else ""}</text>')
+            o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{desc_(of, dk)}</text>')
             yy += step
         if soon:
             yy += 20
@@ -312,7 +326,7 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
                 of = next(x for x in offices if x['id'] == oid)
                 o.append(leaf(px, yy - 26, 36, 36, '#C3DEDB', r=18))
                 o.append(f'<text x="{px+54}" y="{yy}" class="ys" font-size="24" fill="{ink}">{of["name"]}</text>')
-                o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{of["sq"]} sq ft · {"date to be confirmed" if when == "soon" else "from " + when}</text>')
+                o.append(f'<text x="{px+230}" y="{yy}" class="bt" font-size="19" fill="{sub}">{" · ".join(x for x in [desc_(of, P.DESKS_PER.get(oid)), "date to be confirmed" if when == "soon" else "from " + when] if x)}</text>')
                 yy += step
         yy += 30
         o.append(f'<line x1="{px}" y1="{yy}" x2="{px+LW}" y2="{yy}" stroke="{ink}" stroke-opacity=".2"/>')
@@ -329,12 +343,15 @@ def flat(P, avail, date, embed=True, soon=None, focus=None):
     if P.NORTH:
         nx, ny = P.NORTH
         o.append(compass(px + LW - 150, yy + 2, nx, ny, ink))
-    m = P.PX_PER_M * sc
-    for i in range(5):
-        o.append(f'<rect x="{px+i*m:.1f}" y="{yy}" width="{m:.1f}" height="8" fill="{ink if i%2==0 else "none"}" stroke="{ink}" stroke-width="1"/>')
-    o.append(f'<text x="{px}" y="{yy+30}" class="bt" font-size="14" fill="{sub}">0 m</text>')
-    o.append(f'<text x="{px+5*m:.1f}" y="{yy+30}" text-anchor="end" class="bt" font-size="14" fill="{sub}">5 m</text>')
-    o.append(f'<text x="{px}" y="{yy+80}" class="bt" font-size="13.5" fill="{sub}">Drawn to scale. Sizes are approximate and for guidance only.</text>')
+    if SHOW_SQFT:  # scale bar lets people measure rooms, so it goes with the sq ft
+        m = P.PX_PER_M * sc
+        for i in range(5):
+            o.append(f'<rect x="{px+i*m:.1f}" y="{yy}" width="{m:.1f}" height="8" fill="{ink if i%2==0 else "none"}" stroke="{ink}" stroke-width="1"/>')
+        o.append(f'<text x="{px}" y="{yy+30}" class="bt" font-size="14" fill="{sub}">0 m</text>')
+        o.append(f'<text x="{px+5*m:.1f}" y="{yy+30}" text-anchor="end" class="bt" font-size="14" fill="{sub}">5 m</text>')
+        o.append(f'<text x="{px}" y="{yy+80}" class="bt" font-size="13.5" fill="{sub}">Drawn to scale. Sizes are approximate and for guidance only.</text>')
+    else:
+        o.append(f'<text x="{px}" y="{yy+80}" class="bt" font-size="13.5" fill="{sub}">Layout is indicative. Come and see the space in person.</text>')
     if getattr(P, 'NOTE', None):
         o.append(f'<text x="{px}" y="{yy+104}" class="bt" font-size="13.5" fill="{sub}">{P.NOTE}</text>')
     o.append(f'<text x="{px}" y="{H-70}" class="ys" font-size="30" fill="{ink}">Bespoke Spaces</text>')
@@ -471,7 +488,7 @@ def isometric(P, avail, date, embed=True, soon=None):
         o.append(f'<g transform="translate({X:.1f},{Y:.1f}) scale({bs:.3f})">'
                  + (f'<circle r="19" fill="#FBFAF6" stroke="#2D2D2A" stroke-width="1.6"/><text y="7" text-anchor="middle" class="ys" font-size="19" fill="#2D2D2A">{num}</text>'
                     if len(of['name']) <= 10 else f'<text y="7" text-anchor="middle" class="ys" font-size="17" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke">{num}</text>')
-                 + (f'<text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">{of["sq"]} sq ft</text>' if of['sq'] else '')
+                 + (f'<text y="38" text-anchor="middle" class="bt" font-weight="600" font-size="15" fill="#2D2D2A" stroke="#F6F3EC" stroke-width="5" paint-order="stroke" stroke-linejoin="round">{of["sq"]} sq ft</text>' if (of['sq'] and SHOW_SQFT) else '')
                  + '</g>')
     pins = getattr(P, 'PINS', {})
     for of in offices:
@@ -498,7 +515,7 @@ def isometric(P, avail, date, embed=True, soon=None):
         o.append(f'<circle cx="{X:.1f}" cy="{Y:.1f}" r="{5*bs:.2f}" fill="#2D2D2A"/>')
         o.append(f'<g transform="translate({bx:.1f},{by:.1f}) scale({bs:.3f})">' + leaf(0, 0, bw, bh, '#2D2D2A', r=30) +
                  f'<text x="{bw/2}" y="31" text-anchor="middle" class="ys" font-size="25" fill="{C["cream"]}">{of["name"]}</text>'
-                 f'<text x="{bw/2}" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="{C["teal"]}">{(("COMING SOON" if soon[of["id"]] == "soon" else "FROM " + soon[of["id"]].upper())) if of["id"] in soon else "AVAILABLE"} · {of["sq"]} SQ FT</text></g>')
+                 f'<text x="{bw/2}" y="55" text-anchor="middle" class="bt" font-weight="600" font-size="15" letter-spacing="1" fill="{C["teal"]}">{(("COMING SOON" if soon[of["id"]] == "soon" else "FROM " + soon[of["id"]].upper())) if of["id"] in soon else "AVAILABLE"}{(" · " + str(of["sq"]) + " SQ FT") if SHOW_SQFT else ""}</text></g>')
     o.append('</g>')
     M = P.META
     o.append(f'<text x="70" y="105" class="bt" font-size="15" letter-spacing="3" fill="#6b6a63">{M["site"]}{" · " + M["floor"] if M.get("floor") else ""}</text>')

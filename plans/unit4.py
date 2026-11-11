@@ -93,7 +93,7 @@ PLANTS = [_p(375, 236), _p(326, 538), _p(433, 540)]
 META = dict(site='HORNSEY · 465 HORNSEY ROAD, N19', floor='FIRST FLOOR', title='Unit 4', slug='hornsey-unit4',
             summary='9 private offices · open-plan desks')
 NORTH = (0, -1)   # top (open-plan window) wall faces north
-NOTE = 'Open plan holds 10 dedicated desks. Overall 17.7 m × 17.3 m, from the drawing.'
+NOTE = 'Open plan holds 10 dedicated desks.'
 PINS = {'8': 'up'}
 TEXT_SCALE = 1.25
 FLAT_MARGIN = (20, 10, 10, 10)
