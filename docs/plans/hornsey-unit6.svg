@@ -16,7 +16,7 @@
 <polyline points="1297.0,1048.0 1297.0,1195.0" stroke="#2D2D2A" stroke-opacity="0.35" fill="none"/>
 <polygon points="877.0,815.0 1312.0,815.0 1312.0,1040.0 877.0,1040.0" fill="#DDD7C9"/>
 <polygon points="1022.0,623.0 1312.0,623.0 1312.0,815.0 1022.0,815.0" fill="#7BB5B2"/>
-<polygon points="1022.0,455.0 1312.0,455.0 1312.0,623.0 1022.0,623.0" fill="#7BB5B2"/>
+<polygon points="1022.0,455.0 1312.0,455.0 1312.0,623.0 1022.0,623.0" fill="#DDD7C9"/>
 <polygon points="1022.0,245.0 1312.0,245.0 1312.0,455.0 1022.0,455.0" fill="#DDD7C9"/>
 <polygon points="892.0,18.0 1312.0,18.0 1312.0,245.0 1022.0,245.0 1022.0,155.0 892.0,155.0" fill="#DDD7C9"/>
 <polygon points="452.0,18.0 892.0,18.0 892.0,250.0 452.0,250.0" fill="#7BB5B2"/>
@@ -251,8 +251,7 @@
 <text x="1095" y="925" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 1</text>
 <text x="1165" y="730" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#7BB5B2" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 2</text>
 <g transform="translate(1097.8,742.8)"><path d="M16.0,0 H134.4 V16.0 A16.0,16.0 0 0 1 118.4,32.0 H0 V16.0 A16.0,16.0 0 0 1 16.0,0 Z" fill="#2D2D2A"/><text x="67.2" y="22.1" text-anchor="middle" class="bt" font-weight="700" font-size="17.6" letter-spacing=".6" fill="#EAE6DD">AVAILABLE</text></g>
-<text x="1165" y="540" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#7BB5B2" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 3</text>
-<g transform="translate(1097.8,552.8)"><path d="M16.0,0 H134.4 V16.0 A16.0,16.0 0 0 1 118.4,32.0 H0 V16.0 A16.0,16.0 0 0 1 16.0,0 Z" fill="#2D2D2A"/><text x="67.2" y="22.1" text-anchor="middle" class="bt" font-weight="700" font-size="17.6" letter-spacing=".6" fill="#EAE6DD">AVAILABLE</text></g>
+<text x="1165" y="540" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 3</text>
 <text x="1165" y="345" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 4</text>
 <text x="1060" y="150" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 5</text>
 <text x="700" y="150" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#7BB5B2" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 6</text>
@@ -303,35 +302,32 @@
 <text x="910" y="245" class="bt" font-size="19" fill="#6b6a63">14 private offices · meeting room</text>
 <line x1="910" y1="290" x2="1450" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="910" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
-<text x="1450" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">Prices per month · as of 12 Nov 2026</text>
+<text x="1450" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">Prices per month · as of 13 Nov 2026</text>
 <path d="M928,369 H946 V387 A18,18 0 0 1 928,405 H910 V387 A18,18 0 0 1 928,369 Z" fill="#7BB5B2"/>
 <text x="964" y="395" class="ys" font-size="26" fill="#2D2D2A">Office 2</text>
 <text x="1140" y="395" class="bt" font-size="19" fill="#6b6a63">3 desks · £1,050 + VAT</text>
 <path d="M928,413 H946 V431 A18,18 0 0 1 928,449 H910 V431 A18,18 0 0 1 928,413 Z" fill="#7BB5B2"/>
-<text x="964" y="439" class="ys" font-size="26" fill="#2D2D2A">Office 3</text>
-<text x="1140" y="439" class="bt" font-size="19" fill="#6b6a63">3 desks · £850 + VAT</text>
-<path d="M928,457 H946 V475 A18,18 0 0 1 928,493 H910 V475 A18,18 0 0 1 928,457 Z" fill="#7BB5B2"/>
-<text x="964" y="483" class="ys" font-size="26" fill="#2D2D2A">Office 6</text>
-<text x="1140" y="483" class="bt" font-size="19" fill="#6b6a63">6 desks · £1,500 + VAT</text>
-<text x="910" y="547" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
+<text x="964" y="439" class="ys" font-size="26" fill="#2D2D2A">Office 6</text>
+<text x="1140" y="439" class="bt" font-size="19" fill="#6b6a63">6 desks · £1,500 + VAT</text>
+<text x="910" y="503" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
+<path d="M928,523 H946 V541 A18,18 0 0 1 928,559 H910 V541 A18,18 0 0 1 928,523 Z" fill="#C3DEDB"/>
+<text x="964" y="549" class="ys" font-size="24" fill="#2D2D2A">Office 7</text>
+<text x="1140" y="549" class="bt" font-size="19" fill="#6b6a63">2 desks · £695 + VAT · from 5 Dec</text>
 <path d="M928,567 H946 V585 A18,18 0 0 1 928,603 H910 V585 A18,18 0 0 1 928,567 Z" fill="#C3DEDB"/>
-<text x="964" y="593" class="ys" font-size="24" fill="#2D2D2A">Office 7</text>
-<text x="1140" y="593" class="bt" font-size="19" fill="#6b6a63">2 desks · £695 + VAT · from 5 Dec</text>
-<path d="M928,611 H946 V629 A18,18 0 0 1 928,647 H910 V629 A18,18 0 0 1 928,611 Z" fill="#C3DEDB"/>
-<text x="964" y="637" class="ys" font-size="24" fill="#2D2D2A">Office 11</text>
-<text x="1140" y="637" class="bt" font-size="19" fill="#6b6a63">5 desks · £1,750 + VAT · from 27 Dec</text>
-<line x1="910" y1="711" x2="1450" y2="711" stroke="#2D2D2A" stroke-opacity=".2"/>
-<rect x="910" y="748" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="766" class="bt" font-size="18" fill="#2D2D2A">Available</text>
-<rect x="910" y="780" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="798" class="bt" font-size="18" fill="#2D2D2A">Coming up</text>
-<rect x="910" y="812" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="830" class="bt" font-size="18" fill="#2D2D2A">Let</text>
-<rect x="910" y="844" width="24" height="24" rx="3" fill="#F6F3EC" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="948" y="862" class="bt" font-size="18" fill="#2D2D2A">Shared spaces</text>
-<circle cx="1300" cy="920" r="34" fill="none" stroke="#2D2D2A" stroke-opacity=".35"/><path d="M1300.0,894.0 L1300.0,946.0" stroke="#2D2D2A" stroke-width="2.4" fill="none"/><path d="M1293.0,934.0 L1300.0,946.0 L1307.0,934.0" stroke="#2D2D2A" stroke-width="2.4" fill="none" stroke-linejoin="round"/><text x="1300.0" y="978.0" text-anchor="middle" class="ys" font-size="24" fill="#2D2D2A">N</text>
-<text x="910" y="998" class="bt" font-size="13.5" fill="#6b6a63">Layout is indicative. Come and see the space in person.</text>
-<text x="910" y="1022" class="bt" font-size="13.5" fill="#6b6a63">Office 9 is the meeting room.</text>
+<text x="964" y="593" class="ys" font-size="24" fill="#2D2D2A">Office 11</text>
+<text x="1140" y="593" class="bt" font-size="19" fill="#6b6a63">5 desks · £1,750 + VAT · from 27 Dec</text>
+<line x1="910" y1="667" x2="1450" y2="667" stroke="#2D2D2A" stroke-opacity=".2"/>
+<rect x="910" y="704" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="722" class="bt" font-size="18" fill="#2D2D2A">Available</text>
+<rect x="910" y="736" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="754" class="bt" font-size="18" fill="#2D2D2A">Coming up</text>
+<rect x="910" y="768" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="786" class="bt" font-size="18" fill="#2D2D2A">Let</text>
+<rect x="910" y="800" width="24" height="24" rx="3" fill="#F6F3EC" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="948" y="818" class="bt" font-size="18" fill="#2D2D2A">Shared spaces</text>
+<circle cx="1300" cy="876" r="34" fill="none" stroke="#2D2D2A" stroke-opacity=".35"/><path d="M1300.0,850.0 L1300.0,902.0" stroke="#2D2D2A" stroke-width="2.4" fill="none"/><path d="M1293.0,890.0 L1300.0,902.0 L1307.0,890.0" stroke="#2D2D2A" stroke-width="2.4" fill="none" stroke-linejoin="round"/><text x="1300.0" y="934.0" text-anchor="middle" class="ys" font-size="24" fill="#2D2D2A">N</text>
+<text x="910" y="954" class="bt" font-size="13.5" fill="#6b6a63">Layout is indicative. Come and see the space in person.</text>
+<text x="910" y="978" class="bt" font-size="13.5" fill="#6b6a63">Office 9 is the meeting room.</text>
 <text x="910" y="1080" class="ys" font-size="30" fill="#2D2D2A">Bespoke Spaces</text>
 <text x="910" y="1108" class="bt" font-size="15" fill="#6b6a63">bespokespaces.co · Book a viewing</text>
 </svg>
