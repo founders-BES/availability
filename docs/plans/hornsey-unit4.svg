@@ -17,7 +17,7 @@
 <polygon points="430.0,712.0 964.0,712.0 964.0,796.0 762.0,796.0 762.0,1106.0 430.0,1106.0" fill="#DDD7C9"/>
 <polygon points="786.0,446.0 964.0,446.0 964.0,712.0 786.0,712.0" fill="#DDD7C9"/>
 <polygon points="430.0,446.0 654.0,446.0 654.0,712.0 430.0,712.0" fill="#DDD7C9"/>
-<polygon points="1036.0,590.0 1230.0,590.0 1230.0,836.0 1120.0,836.0 1120.0,816.0 1036.0,774.0" fill="#C3DEDB"/>
+<polygon points="1036.0,590.0 1230.0,590.0 1230.0,836.0 1120.0,836.0 1120.0,816.0 1036.0,774.0" fill="#DDD7C9"/>
 <polygon points="762.0,796.0 964.0,796.0 964.0,1106.0 762.0,1106.0" fill="#DDD7C9"/>
 <polygon points="1036.0,420.0 1230.0,420.0 1230.0,590.0 1036.0,590.0" fill="#DDD7C9"/>
 <polygon points="1036.0,244.0 1230.0,244.0 1230.0,420.0 1036.0,420.0" fill="#7BB5B2"/>
@@ -209,8 +209,7 @@
 <text x="690.0" y="964.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 1</text>
 <text x="872.0" y="660.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 2</text>
 <text x="516.0" y="604.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 3</text>
-<text x="1144.0" y="724.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#C3DEDB" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 4</text>
-<g transform="translate(1074.0,734.0)"><path d="M12.5,0 H140.0 V12.5 A12.5,12.5 0 0 1 127.5,25.0 H0 V12.5 A12.5,12.5 0 0 1 12.5,0 Z" fill="#2D2D2A"/><text x="70.0" y="17.2" text-anchor="middle" class="bt" font-weight="700" font-size="13.8" letter-spacing=".6" fill="#EAE6DD">FROM 19 NOV</text></g>
+<text x="1144.0" y="724.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 4</text>
 <text x="862.0" y="940.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 5</text>
 <text x="1120.0" y="476.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 6</text>
 <text x="1120.0" y="320.0" text-anchor="middle" class="ys" font-size="28.8" fill="#2D2D2A" stroke="#7BB5B2" stroke-width="6.25" paint-order="stroke" stroke-linejoin="round">Office 7</text>
@@ -244,29 +243,23 @@
 <text x="720" y="245" class="bt" font-size="19" fill="#6b6a63">9 private offices · open-plan desks</text>
 <line x1="720" y1="290" x2="1340" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="720" y="345" class="ys" font-size="30" fill="#2D2D2A">Available now</text>
-<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">Prices per month · as of 17 Nov 2026</text>
+<text x="1340" y="345" text-anchor="end" class="bt" font-size="15" fill="#6b6a63">Prices per month · as of 18 Nov 2026</text>
 <path d="M738,369 H756 V387 A18,18 0 0 1 738,405 H720 V387 A18,18 0 0 1 738,369 Z" fill="#7BB5B2"/>
 <text x="774" y="395" class="ys" font-size="26" fill="#2D2D2A">Office 7</text>
 <text x="950" y="395" class="bt" font-size="19" fill="#6b6a63">2 desks · £750, no VAT</text>
-<path d="M738,413 H756 V431 A18,18 0 0 1 738,449 H720 V431 A18,18 0 0 1 738,413 Z" fill="#7BB5B2"/>
-<text x="774" y="439" class="ys" font-size="26" fill="#2D2D2A">Office 8</text>
-<text x="950" y="439" class="bt" font-size="19" fill="#6b6a63">2 desks · £750, no VAT</text>
-<text x="720" y="503" class="ys" font-size="24" fill="#2D2D2A">Coming up</text>
-<path d="M738,523 H756 V541 A18,18 0 0 1 738,559 H720 V541 A18,18 0 0 1 738,523 Z" fill="#C3DEDB"/>
-<text x="774" y="549" class="ys" font-size="24" fill="#2D2D2A">Office 4</text>
-<text x="950" y="549" class="bt" font-size="19" fill="#6b6a63">1 desk · £950, no VAT · from 19 Nov</text>
-<line x1="720" y1="623" x2="1340" y2="623" stroke="#2D2D2A" stroke-opacity=".2"/>
-<rect x="720" y="660" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="758" y="678" class="bt" font-size="18" fill="#2D2D2A">Available</text>
-<rect x="720" y="692" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="758" y="710" class="bt" font-size="18" fill="#2D2D2A">Coming up</text>
-<rect x="720" y="724" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="758" y="742" class="bt" font-size="18" fill="#2D2D2A">Let</text>
-<rect x="720" y="756" width="24" height="24" rx="3" fill="#F6F3EC" stroke="#2D2D2A" stroke-opacity=".25"/>
-<text x="758" y="774" class="bt" font-size="18" fill="#2D2D2A">Shared spaces</text>
-<circle cx="1190" cy="832" r="34" fill="none" stroke="#2D2D2A" stroke-opacity=".35"/><path d="M1190.0,858.0 L1190.0,806.0" stroke="#2D2D2A" stroke-width="2.4" fill="none"/><path d="M1197.0,818.0 L1190.0,806.0 L1183.0,818.0" stroke="#2D2D2A" stroke-width="2.4" fill="none" stroke-linejoin="round"/><text x="1190.0" y="790.0" text-anchor="middle" class="ys" font-size="24" fill="#2D2D2A">N</text>
-<text x="720" y="910" class="bt" font-size="13.5" fill="#6b6a63">Layout is indicative. Come and see the space in person.</text>
-<text x="720" y="934" class="bt" font-size="13.5" fill="#6b6a63">Open plan holds 10 dedicated desks.</text>
+<path d="M738,427 H756 V445 A18,18 0 0 1 738,463 H720 V445 A18,18 0 0 1 738,427 Z" fill="#7BB5B2"/>
+<text x="774" y="453" class="ys" font-size="26" fill="#2D2D2A">Office 8</text>
+<text x="950" y="453" class="bt" font-size="19" fill="#6b6a63">2 desks · £750, no VAT</text>
+<line x1="720" y1="541" x2="1340" y2="541" stroke="#2D2D2A" stroke-opacity=".2"/>
+<rect x="720" y="578" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="758" y="596" class="bt" font-size="18" fill="#2D2D2A">Available</text>
+<rect x="720" y="618" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="758" y="636" class="bt" font-size="18" fill="#2D2D2A">Let</text>
+<rect x="720" y="658" width="24" height="24" rx="3" fill="#F6F3EC" stroke="#2D2D2A" stroke-opacity=".25"/>
+<text x="758" y="676" class="bt" font-size="18" fill="#2D2D2A">Shared spaces</text>
+<circle cx="1190" cy="758" r="34" fill="none" stroke="#2D2D2A" stroke-opacity=".35"/><path d="M1190.0,784.0 L1190.0,732.0" stroke="#2D2D2A" stroke-width="2.4" fill="none"/><path d="M1197.0,744.0 L1190.0,732.0 L1183.0,744.0" stroke="#2D2D2A" stroke-width="2.4" fill="none" stroke-linejoin="round"/><text x="1190.0" y="716.0" text-anchor="middle" class="ys" font-size="24" fill="#2D2D2A">N</text>
+<text x="720" y="836" class="bt" font-size="13.5" fill="#6b6a63">Layout is indicative. Come and see the space in person.</text>
+<text x="720" y="860" class="bt" font-size="13.5" fill="#6b6a63">Open plan holds 10 dedicated desks.</text>
 <text x="720" y="1080" class="ys" font-size="30" fill="#2D2D2A">Bespoke Spaces</text>
 <text x="720" y="1108" class="bt" font-size="15" fill="#6b6a63">bespokespaces.co · Book a viewing</text>
 </svg>
