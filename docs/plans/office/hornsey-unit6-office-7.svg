@@ -20,7 +20,7 @@
 <polygon points="1022.0,245.0 1312.0,245.0 1312.0,455.0 1022.0,455.0" fill="#DDD7C9"/>
 <polygon points="892.0,18.0 1312.0,18.0 1312.0,245.0 1022.0,245.0 1022.0,155.0 892.0,155.0" fill="#DDD7C9"/>
 <polygon points="452.0,18.0 892.0,18.0 892.0,250.0 452.0,250.0" fill="#DDD7C9"/>
-<polygon points="682.0,250.0 892.0,250.0 892.0,412.0 682.0,412.0" fill="#C3DEDB"/>
+<polygon points="682.0,250.0 892.0,250.0 892.0,412.0 682.0,412.0" fill="#7BB5B2"/>
 <polygon points="452.0,250.0 682.0,250.0 682.0,567.0 452.0,567.0" fill="#DDD7C9"/>
 <polygon points="682.0,412.0 892.0,412.0 892.0,567.0 682.0,567.0" fill="#DDD7C9"/>
 <polygon points="18.0,18.0 452.0,18.0 452.0,250.0 18.0,250.0" fill="#DDD7C9"/>
@@ -254,8 +254,8 @@
 <text x="1165" y="345" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 4</text>
 <text x="1060" y="150" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 5</text>
 <text x="700" y="150" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 6</text>
-<text x="787" y="320" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#C3DEDB" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 7</text>
-<g transform="translate(697.4,332.8)"><path d="M16.0,0 H179.20000000000002 V16.0 A16.0,16.0 0 0 1 163.20000000000002,32.0 H0 V16.0 A16.0,16.0 0 0 1 16.0,0 Z" fill="#2D2D2A"/><text x="89.6" y="22.1" text-anchor="middle" class="bt" font-weight="700" font-size="17.6" letter-spacing=".6" fill="#EAE6DD">FROM 5 DEC</text></g>
+<text x="787" y="320" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#7BB5B2" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 7</text>
+<g transform="translate(719.8,332.8)"><path d="M16.0,0 H134.4 V16.0 A16.0,16.0 0 0 1 118.4,32.0 H0 V16.0 A16.0,16.0 0 0 1 16.0,0 Z" fill="#2D2D2A"/><text x="67.2" y="22.1" text-anchor="middle" class="bt" font-weight="700" font-size="17.6" letter-spacing=".6" fill="#EAE6DD">AVAILABLE</text></g>
 <text x="567" y="315" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 8</text>
 <text x="787" y="445" text-anchor="middle" class="ys" font-size="27.2" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Meeting room</text>
 <text x="300" y="145" text-anchor="middle" class="ys" font-size="36.8" fill="#2D2D2A" stroke="#DDD7C9" stroke-width="8.0" paint-order="stroke" stroke-linejoin="round">Office 10</text>
@@ -299,12 +299,12 @@
 <text x="910" y="245" class="bt" font-size="19" fill="#6b6a63">14 private offices · meeting room</text>
 <line x1="910" y1="290" x2="1450" y2="290" stroke="#2D2D2A" stroke-opacity=".2"/>
 <text x="910" y="345" class="ys" font-size="30" fill="#2D2D2A">This office</text>
-<path d="M932,377 H954 V399 A22,22 0 0 1 932,421 H910 V399 A22,22 0 0 1 932,377 Z" fill="#C3DEDB"/>
+<path d="M932,377 H954 V399 A22,22 0 0 1 932,421 H910 V399 A22,22 0 0 1 932,377 Z" fill="#7BB5B2"/>
 <text x="972" y="407" class="ys" font-size="34" fill="#2D2D2A">Office 7</text>
 <text x="972" y="447" class="bt" font-size="19" fill="#6b6a63">2 desks · £695/month + VAT</text>
-<text x="972" y="479" class="bt" font-size="19" font-weight="600" fill="#2D2D2A">Available from 5 Dec</text>
+<text x="972" y="479" class="bt" font-size="19" font-weight="600" fill="#2D2D2A">Available now</text>
 <line x1="910" y1="529" x2="1450" y2="529" stroke="#2D2D2A" stroke-opacity=".2"/>
-<rect x="910" y="566" width="24" height="24" rx="3" fill="#C3DEDB" stroke="#2D2D2A" stroke-opacity=".25"/>
+<rect x="910" y="566" width="24" height="24" rx="3" fill="#7BB5B2" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="948" y="584" class="bt" font-size="18" fill="#2D2D2A">This office</text>
 <rect x="910" y="606" width="24" height="24" rx="3" fill="#DDD7C9" stroke="#2D2D2A" stroke-opacity=".25"/>
 <text x="948" y="624" class="bt" font-size="18" fill="#2D2D2A">Other offices</text>
